@@ -21,7 +21,7 @@ Puedes probar la aplicación en vivo aquí: [Pixel Art Editor](https://tu-usuari
 
 ## 🛠️ Tecnologías Utilizadas
 
-- React
+- React 
 - TypeScript
 - Vite
 - React Color
