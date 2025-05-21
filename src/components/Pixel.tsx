@@ -12,7 +12,6 @@ export default function Pixel(props: pixeltype) {
     const [pixelColor, setPixelColor] = useState("#fff");
     const [oldColor, setOldColor] = useState(pixelColor);
     const [changeColor, setChangeColor] = useState(true);
-    const [isHovered, setIsHovered] = useState(false);
     const [isRightMouseDown, setIsRightMouseDown] = useState(false);
 
     const applyColor = () => {

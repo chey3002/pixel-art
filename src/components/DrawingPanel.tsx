@@ -20,7 +20,9 @@ export default function DrawingPanel(props: DrawingPanelProps) {
     };
 
     const handleMouseUp = (e: React.MouseEvent) => {
-        setIsMouseDown(false);
+        if (e.button === 0) { // Solo para clic izquierdo
+            setIsMouseDown(false);
+        }
     };
 
     // Agregar event listeners globales para manejar cuando el mouse sale del panel
