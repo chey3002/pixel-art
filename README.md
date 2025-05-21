@@ -17,7 +17,7 @@ Un editor de pixel art interactivo y fácil de usar, construido con React y Type
 
 ## 🚀 Demo
 
-Puedes probar la aplicación en vivo aquí: [Pixel Art Editor](https://tu-usuario.github.io/pixel-art)
+Puedes probar la aplicación en vivo aquí: [Pixel Art Editor](https://chey3002.github.io/pixel-art)
 
 ## 🛠️ Tecnologías Utilizadas
 
