@@ -5,8 +5,8 @@ type RowProps = {
     width: number;
     selectedColor: string;
     isMouseDown: boolean;
-    onMouseDown: () => void;
-    onMouseUp: () => void;
+    onMouseDown: (e: React.MouseEvent) => void;
+    onMouseUp: (e: React.MouseEvent) => void;
 }
 
 export default function Row(props: RowProps) {

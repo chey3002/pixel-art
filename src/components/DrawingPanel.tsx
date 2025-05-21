@@ -19,7 +19,7 @@ export default function DrawingPanel(props: DrawingPanelProps) {
         }
     };
 
-    const handleMouseUp = () => {
+    const handleMouseUp = (e: React.MouseEvent) => {
         setIsMouseDown(false);
     };
 

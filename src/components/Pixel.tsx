@@ -4,7 +4,7 @@ type pixeltype = {
     selectedColor: string;
     isMouseDown: boolean;
     onMouseDown: (e: React.MouseEvent) => void;
-    onMouseUp: () => void;
+    onMouseUp: (e: React.MouseEvent) => void;
 }
 
 export default function Pixel(props: pixeltype) {
@@ -45,12 +45,11 @@ export default function Pixel(props: pixeltype) {
         if (e.button === 2) {
             setIsRightMouseDown(false);
         } else {
-            onMouseUp();
+            onMouseUp(e);
         }
     }
 
     const changeColorOnHover = () => {
-        setIsHovered(true);
         if (isRightMouseDown) {
             setPixelColor("#fff");
             setOldColor("#fff");
@@ -66,7 +65,6 @@ export default function Pixel(props: pixeltype) {
     }
 
     const resetColor = () => {
-        setIsHovered(false);
         if (!isMouseDown && !isRightMouseDown) {
             setPixelColor(oldColor);
             setChangeColor(true);

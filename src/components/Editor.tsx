@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { CompactPicker, type ColorResult } from 'react-color'
 import DrawingPanel from './DrawingPanel';
 
